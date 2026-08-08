@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our stunning portfolio of bridal makeup, party looks, hair styling, and beauty transformations at Bliss Makeover Studio and Academy. See our work and book your appointment today!">
+    <meta name="keywords" content="makeup portfolio, bridal gallery, beauty transformations, makeup artist work, hair styling gallery, Bulandshahr makeup">
+    <title>Gallery - Bliss Makeover Studio and Academy Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0a0a0c">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Bliss Makeover Studio and Academy</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="jewellery.html" class="nav-link">Jewellery</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="testimonials.html" class="nav-link">Testimonials</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="https://wa.me/919410016655?text=Hi%20Bliss%2C%20I%20want%20to%20book%20an%20appointment" class="nav-link book-now-btn">Book Now</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Discover our stunning portfolio of beauty transformations and artistic creations</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="party">Party</button>
+                <button class="filter-btn" data-filter="hair">Hair Styling</button>
+                <button class="filter-btn" data-filter="facial">Facials</button>
+                <button class="filter-btn" data-filter="before-after">Before & After</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Bridal Gallery Items -->
+                <div class="gallery-item" data-category="bridal">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Elegant bridal makeup look" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Elegant Bridal Look</h3>
+                                <p>Classic bridal makeup with soft pink tones</p>
+                                <div class="gallery-actions">
+                                    <button class="gallery-btn" onclick="openLightbox('bridal-1')">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="gallery-btn" onclick="shareImage('bridal-1')">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bridal">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Glamorous bridal transformation" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Glamorous Bride</h3>
+                                <p>Bold and beautiful bridal transformation</p>
+                                <div class="gallery-actions">
+                                    <button class="gallery-btn" onclick="openLightbox('bridal-2')">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="gallery-btn" onclick="shareImage('bridal-2')">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bridal">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Traditional Indian bridal makeup" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Traditional Indian Bride</h3>
+                                <p>Rich colors and traditional styling</p>
+                                <div class="gallery-actions">
+                                    <button class="gallery-btn" onclick="openLightbox('bridal-3')">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="gallery-btn" onclick="shareImage('bridal-3')">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Party Gallery Items -->
+                <div class="gallery-item" data-category="party">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Party makeup look" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Party Glam</h3>
+                                <p>Perfect for special occasions</p>
+                                <div class="gallery-actions">
+                                    <button class="gallery-btn" onclick="openLightbox('party-1')">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="gallery-btn" onclick="shareImage('party-1')">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="party">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Evening party makeup" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Evening Elegance</h3>
+                                <p>Sophisticated party look</p>
+                                <div class="gallery-actions">
+                                    <button class="gallery-btn" onclick="openLightbox('party-2')">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="gallery-btn" onclick="shareImage('party-2')">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="party">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Festive party makeup" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Festive Glamour</h3>
+                                <p>Celebration-ready makeup</p>
+                                <div class="gallery-actions">
+                                    <button class="gallery-btn" onclick="openLightbox('party-3')">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="gallery-btn" onclick="shareImage('party-3')">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hair Styling Gallery Items -->
+                <div class="gallery-item" data-category="hair">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Elegant updo hairstyle" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Elegant Updo</h3>
+                                <p>Classic bridal hairstyle</p>
+                                <div class="gallery-actions">
+                                    <button class="gallery-btn" onclick="openLightbox('hair-1')">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="gallery-btn" onclick="shareImage('hair-1')">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hair">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Loose curls hairstyle" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Loose Curls</h3>
+                                <p>Romantic flowing hairstyle</p>
+                                <div class="gallery-actions">
+                                    <button class="gallery-btn" onclick="openLightbox('hair-2')">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="gallery-btn" onclick="shareImage('hair-2')">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hair">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Modern braided hairstyle" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Modern Braids</h3>
+                                <p>Contemporary braided look</p>
+                                <div class="gallery-actions">
+                                    <button class="gallery-btn" onclick="openLightbox('hair-3')">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="gallery-btn" onclick="shareImage('hair-3')">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facial Gallery Items -->
+                <div class="gallery-item" data-category="facial">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Facial treatment process" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Deep Cleansing</h3>
+                                <p>Professional facial treatment</p>
+                                <div class="gallery-actions">
+                                    <button class="gallery-btn" onclick="openLightbox('facial-1')">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="gallery-btn" onclick="shareImage('facial-1')">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facial">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Hydrating facial treatment" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Hydrating Treatment</h3>
+                                <p>Moisturizing facial therapy</p>
+                                <div class="gallery-actions">
+                                    <button class="gallery-btn" onclick="openLightbox('facial-2')">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="gallery-btn" onclick="shareImage('facial-2')">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Before & After Gallery Items -->
+                <div class="gallery-item" data-category="before-after">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Makeup transformation before and after" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Amazing Transformation</h3>
+                                <p>Before and after makeup</p>
+                                <div class="gallery-actions">
+                                    <button class="gallery-btn" onclick="openLightbox('before-after-1')">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="gallery-btn" onclick="shareImage('before-after-1')">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="before-after">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Hair styling transformation" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Hair Makeover</h3>
+                                <p>Complete hair transformation</p>
+                                <div class="gallery-actions">
+                                    <button class="gallery-btn" onclick="openLightbox('before-after-2')">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="gallery-btn" onclick="shareImage('before-after-2')">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="before-after">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Skin treatment results" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Skin Glow Up</h3>
+                                <p>Facial treatment results</p>
+                                <div class="gallery-actions">
+                                    <button class="gallery-btn" onclick="openLightbox('before-after-3')">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="gallery-btn" onclick="shareImage('before-after-3')">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="lightbox-prev" onclick="changeImage(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-next" onclick="changeImage(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Love What You See?</h2>
+                <p>Book your appointment today and let us create your perfect look</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/919410016655?text=Hi%20Bliss%2C%20I%20want%20to%20book%20an%20appointment" class="btn btn-primary btn-large">Book Appointment</a>
+                    <a href="services.html" class="btn btn-secondary btn-large">View Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bliss Makeover Studio and Academy</h3>
+                    <p>Bulandshahr's complete beauty destination - nails, makeup, hair, facials and more, plus Bliss Adorn jewellery.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/bliss_makeover_studio_" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        
+                        <a href="https://wa.me/919410016655" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#nails">Manicure, Pedicure <li><a href="services.html#bridal">Bridal Makeup</a></li> Nails</a></li>
+                        <li><a href="services.html#makeup">Bridal <li><a href="services.html#party">Party Makeup</a></li> Party Makeup</a></li>
+                        <li><a href="services.html#hair">Hair Styling <li><a href="services.html#hair">Hair Styling</a></li> Treatments</a></li>
+                        <li><a href="services.html#facial">Facials <li><a href="services.html#facial">Facials</a></li> Skincare</a></li>
+                        <li><a href="jewellery.html">Bliss Adorn Jewellery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> H No 2, Opp Dr Path's Lab, DM Road, Bulandshahr</p>
+                        <p><i class="fab fa-whatsapp"></i> +91 94100 16655</p>
+                        <p><i class="fab fa-instagram"></i> @bliss_makeover_studio_</p>
+                        <p><i class="fas fa-clock"></i> Open Every Day: 10 AM - 8 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bliss Makeover Studio and Academy. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> for beauty enthusiasts</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919410016655?text=Hi%20Bliss%2C%20I%20want%20to%20book%20an%20appointment" target="_blank" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
